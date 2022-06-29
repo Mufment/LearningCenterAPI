@@ -5,10 +5,10 @@ namespace LearningCenterAPI.Learning.Domain.Services;
 
 public class ICategoryService
 {
-    Task<IEnumerable<Category>> ListAsync();
-    Task<CategoryResponse> SaveAsync(Category Category);
-    Task<CategoryResponse> UpdateAsync(int id, Category);
-    Task<CategoryResponse> DeleteAsync(int id, Category);
+    public Task<IEnumerable<Category>> ListAsync();
+    public Task<CategoryResponse> SaveAsync(Category Category);
+    public Task<CategoryResponse> UpdateAsync(int id, Category);
+    public Task<CategoryResponse> DeleteAsync(int id, Category);
    
     
 }
