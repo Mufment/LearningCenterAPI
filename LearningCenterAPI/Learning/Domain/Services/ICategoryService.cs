@@ -3,12 +3,12 @@ using LearningCenterAPI.Learning.Domain.Services.Communication;
 
 namespace LearningCenterAPI.Learning.Domain.Services;
 
-public class ICategoryService
+public abstract class ICategoryService
 {
-    public Task<IEnumerable<Category>> ListAsync();
-    public Task<CategoryResponse> SaveAsync(Category Category);
-    public Task<CategoryResponse> UpdateAsync(int id, Category);
-    public Task<CategoryResponse> DeleteAsync(int id, Category);
+    public abstract Task<IEnumerable<Category>> ListAsync();
+    public abstract Task<CategoryResponse> SaveAsync(Category Category);
+    public abstract Task<CategoryResponse> UpdateAsync(int id, Category Category);
+    public abstract Task<CategoryResponse> DeleteAsync(int id, Category Category);
    
     
 }
