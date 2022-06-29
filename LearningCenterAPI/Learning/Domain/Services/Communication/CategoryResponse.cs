@@ -11,5 +11,7 @@ public class CategoryResponse : BaseResponse<Category>
 
     public CategoryResponse(Category resource) : base(resource)
     {
+        
+        
     }
 }
