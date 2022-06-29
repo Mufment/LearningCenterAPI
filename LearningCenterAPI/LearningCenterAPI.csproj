@@ -12,7 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Learning\Controllers" />
       <Folder Include="Learning\Domain\Repositories" />
     </ItemGroup>
 
