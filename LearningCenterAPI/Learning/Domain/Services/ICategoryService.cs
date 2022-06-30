@@ -8,7 +8,7 @@ public interface  ICategoryService
     Task<IEnumerable<Category>> ListAsync();
     Task<CategoryResponse> SaveAsync(Category Category);
     Task<CategoryResponse> UpdateAsync(int id, Category Category);
-    Task<CategoryResponse> DeleteAsync(int id, Category Category);
+    Task<CategoryResponse> DeleteAsync(int id);
    
     
 }
