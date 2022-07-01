@@ -5,7 +5,7 @@ namespace LearningCenterAPI.Learning.Persistance.Contexts;
 
 public class AppDbContext : DbContext
 {
-    public DbSet<Category>Categories { get; set; }
+    public DbSet<Tutorial> Categories { get; set; }
     public DbSet<Tutorial>Tutorials { get; set; }
     public AppDbContext(DbContextOptions options) : base(options)
     {
