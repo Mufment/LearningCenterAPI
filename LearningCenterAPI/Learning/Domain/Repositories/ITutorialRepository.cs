@@ -10,7 +10,7 @@ public interface ITutorialRepository
     Task<Tutorial> FindByIdAsync(int tutorialid);
     Task<Tutorial> FindByNameAsync(string name);
     Task<Tutorial> FindByCategoryIdAsync(int categoryId);
-    Task<IEnumerable<Tutorial>> DeleteAsync(int Tutorialid);
+    Task<IEnumerable<Tutorial>> DeleteAsync(int tutorialid);
 
     void Update(Tutorial tutorial);
     void Remove(Tutorial tutorial);

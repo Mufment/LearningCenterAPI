@@ -5,11 +5,11 @@ namespace LearningCenterAPI.Learning.Domain.Repositories;
 public interface ICategoryRepository
 {
     Task<IEnumerable<Category>> ListAsync();
-    Task AddAsync(Category Category);
+    Task AddAsync(Category category);
     Task<Category> FindByIdAsync(int id);
 
-    void Update(Category Category);
-    void Remove(Category Category);
+    void Update(Category category);
+    void Remove(Category category);
 
 
 
