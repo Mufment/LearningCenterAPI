@@ -72,10 +72,10 @@ public class TutorialService : ITutorialService
        
     }
 
-    public async Task<TutorialResponse> UpdateAsync(int tutorialid, Tutorial tutorial)
+    public async Task<TutorialResponse> UpdateAsync(int tutorialId, Tutorial tutorial)
     {
        // validate tutorial
-        var existingTutorial = await _tutorialRepository.FindByIdAsync(tutorialid);
+        var existingTutorial = await _tutorialRepository.FindByIdAsync(tutorialId);
         if (existingTutorial==null)
         {
             return new TutorialResponse("Tutorial not found");
@@ -110,16 +110,16 @@ public class TutorialService : ITutorialService
         //Error Hangling
         catch (Exception e)
         {
-            return new TutorialResponse($"An error has ocurred while Updating");
+            return new TutorialResponse($"An error has occurred while Updating");
         }
         
     }
 
-    public async Task<TutorialResponse> DeleteAsync(int tutorialid)
+    public async Task<TutorialResponse> DeleteAsync(int tutorialId)
     {
         
         // validate tutorial
-        var existingTutorial = await _tutorialRepository.FindByIdAsync(tutorialid);
+        var existingTutorial = await _tutorialRepository.FindByIdAsync(tutorialId);
         
         
         if (existingTutorial==null)
@@ -138,7 +138,7 @@ public class TutorialService : ITutorialService
         //Error Hangling
         catch (Exception e)
         {
-            return new TutorialResponse($"An error has ocurred while Updating");
+            return new TutorialResponse($"An error has occurred while Updating");
         }
         
     }
