@@ -22,9 +22,9 @@ public class AppDbContext : DbContext
 
         //relationships
         Builder.Entity<Category>()
-            .HasMany(p=>p.Tutorials)
-            .WithOne(p=>p.Category)
-            .HasForeignKey(p=>p.CatergoryId)
+            .HasMany(p => p.Tutorials)
+            .WithOne(p => p.Category)
+            .HasForeignKey(p => p.CatergoryId);
             
 
         Builder.Entity<Tutorial>().ToTable("Tutorials");
