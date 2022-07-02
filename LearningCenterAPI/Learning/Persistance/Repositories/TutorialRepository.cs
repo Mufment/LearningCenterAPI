@@ -49,11 +49,11 @@ public class TutorialRepository : BaseRepository, ITutorialRepository
 
     public void Update(Tutorial tutorial)
     {
-        _context.Categories.Update(tutorial);
+        _context.Tutorials.Update(tutorial);
     }
 
     public void Remove(Tutorial tutorial)
     {
-        _context.Categories.Remove(tutorial);
+        _context.Tutorials.Remove(tutorial);
     }
 }
