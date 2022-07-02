@@ -7,8 +7,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LearningCenterAPI.Learning.Controllers;
 
-
+[ApiController]
 [Route("/api/v1/[controller]")]
+
+
+
+
 public class CategoriesController :ControllerBase
 {
     private readonly ICategoryService _categoryService;
